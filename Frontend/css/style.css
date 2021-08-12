@@ -6,3 +6,6 @@
 .margintopdemo{
     margin-top:10px;
 }
+.transit {
+    transition: transform 2s ease, opacity .5s ease-out
+}
