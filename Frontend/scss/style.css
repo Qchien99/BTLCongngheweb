@@ -198,4 +198,20 @@
       .alumni .row .card .card-body p.notify {
         left: -.1rem; }
 
+.about-us {
+  background-color: #FCF9E2; }
+  .about-us .title {
+    padding: 2rem 0; }
+  .about-us .about-body {
+    display: flex;
+    justify-content: space-around; }
+    .about-us .about-body .about {
+      max-width: 16.6666666666666666667%;
+      text-align: center; }
+      .about-us .about-body .about p.name {
+        font-size: 1.4rem; }
+      .about-us .about-body .about p.number {
+        font-weight: bold;
+        font-size: 2rem; }
+
 /*# sourceMappingURL=style.css.map */
