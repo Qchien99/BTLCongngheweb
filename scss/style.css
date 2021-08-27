@@ -116,16 +116,17 @@
         max-width: 1260px;
         margin: auto;
         width: 100%;
+        padding-bottom: 2rem;
     }
 
         .news .row h2 {
-            font-size: 2rem;
+            font-size: 1.6rem;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            letter-spacing: .05em;
         }
 
         .news .row .card {
-            padding-bottom: 2rem;
             border: none;
         }
 
@@ -145,7 +146,7 @@
                     display: inline-block;
                     height: 1.875rem;
                     padding: 0 0.625rem;
-                    color: white;
+                    color: #f1f1f1;
                     background-color: #BE0F0F;
                     font-size: .75rem;
                     font-weight: bold;
@@ -153,10 +154,10 @@
                 }
 
                 .news .row .card .card-body p.title {
-                    line-height: 1.3rem;
+                    font-size: 18px;
+                    font-weight: 700;
+                    height: 48px;
                     overflow: hidden;
-                    height: 2.625rem;
-                    font-weight: bold;
                 }
 
                 .news .row .card .card-body p.card-text {
@@ -191,67 +192,73 @@
             display: none;
         }
 
-.trainning {
+.training {
     font-family: "Roboto", sans-serif;
 }
 
-.training .row {
-    text-align: center;
-    max-width: 1260px;
-    margin: auto;
-    width: 100%;
-}
-
-    .training .row h2.title {
-        color: #0a0909;
-        font-size: 1.6em;
+    .training .row {
+        text-align: center;
+        max-width: 1260px;
+        margin: auto;
         width: 100%;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
     }
 
-.training .row .training-body {
-    display: flex;
-}
-    .training .row .training-body .row2 {
-        max-width: 1230px;
-    }
-
-    .training .row .training-body .card {
-        display: flex;
-        flex-direction: row;
-    }
-
-        .training .row .training-body .card .card-body {
-            text-align: left;
-            max-height: 100%;
-            overflow: hidden;
-        }
-        .training .row .training-body .card img {
-            right: 0;
+        .training .row h2.title {
+            color: #0a0909;
+            font-size: 1.6em;
             width: 100%;
-            height: 100%;
-            bottom: 0;
-            left: 0;
-            top: 0;
-            position: absolute;
-            object-position: 50% 50%;
-            object-fit: cover;
+            margin-top: 2rem;
+            margin-bottom: .5rem;
+            letter-spacing: .05em;
         }
-            .training .row .training-body .card .card-body h5 {
-                width: 100%;
-                margin-top: 0;
-                margin-bottom: .5em;
-                color: #0a0909;
-            }
-            .training .row .training-body .card .card-body p {
-                font-size: 14px;
-            }
-       
-        .training .row .training-body .card img {
-            height: 100%;
-            max-width: 18.75rem;
+
+        .training .row .training-body {
+            display: flex;
+            margin: 2rem;
         }
+
+            .training .row .training-body .row2 {
+                max-width: 1230px;
+            }
+
+            .training .row .training-body .card {
+                display: flex;
+                flex-direction: row;
+            }
+
+                .training .row .training-body .card .card-body {
+                    text-align: left;
+                    max-height: 100%;
+                    overflow: hidden;
+                }
+
+                .training .row .training-body .card img {
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    bottom: 0;
+                    left: 0;
+                    top: 0;
+                    position: absolute;
+                    object-position: 50% 50%;
+                    object-fit: cover;
+                }
+
+                .training .row .training-body .card .card-body h5 {
+                    width: 100%;
+                    margin-top: 0;
+                    margin-bottom: .5em;
+                    color: #0a0909;
+                }
+
+                .training .row .training-body .card .card-body p {
+                    font-size: 14px;
+                }
+
+                .training .row .training-body .card img {
+                    height: 100%;
+                    max-width: 18.75rem;
+                }
 
 .alumni {
     font-family: "Roboto", sans-serif;
@@ -261,16 +268,17 @@
         max-width: 1260px;
         margin: auto;
         width: 100%;
+        padding-bottom: 2rem;
     }
 
         .alumni .row h2 {
-            font-size: 2rem;
+            font-size: 1.6em;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            letter-spacing: .05em;
         }
 
         .alumni .row .card {
-            padding-bottom: 2rem;
             border: none;
         }
 
@@ -325,12 +333,20 @@
                 }
 
 .about-us {
+    font-family: "Roboto", sans-serif;
     background-color: #FCF9E2;
 }
 
-    .about-us .title {
-        padding: 2rem 0;
+    .about-us h2 {
+        font-size: 1.6em;
+        margin-bottom: 2rem;
+        letter-spacing: .05em;
     }
+
+    .about-us .title {
+        padding-top: 2rem;
+    }
+
 
     .about-us .about-body {
         display: flex;
@@ -353,71 +369,171 @@
 
 /*# sourceMappingURL=style.css.map */
 
-events {
+.events {
     font-family: "Roboto", sans-serif;
 }
 
-.events .row {
-    max-width: 1260px;
-    margin: auto;
-    width: 100%;
-}
-
-    .events .row h2 {
-        color: #fff;
-        font-size: 2rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+    .events .row {
+        max-width: 1260px;
+        margin: auto;
+        width: 100%;
+        padding-bottom: 2rem;
     }
 
-    .events .row .card {
-        border: none;
-    }
-
-        .events .row .card img {
-            height: 8.90625rem;
-            object-fit: cover;
+        .events .row h2 {
+            color: #f1f1f1;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
         }
 
-        .events .row .card .card-body {
-            padding: 15px;
+        .events .row .card {
+            border: none;
         }
 
-            .events .row .card .card-body p.notify {
-                color: #fff;
-                background-color: #2f2424;
-                height: 70px;
-                width: 70px;
-                text-align: center;
-                box-shadow: 0 0 10px rgba(0, 0, 0, .15), 0 3px 3px rgba(0, 0, 0, .15);
-                margin-top: -40px;
-                position: relative;
-                margin-left: 25px;
-                font-weight: bold;
-                display: flex;
-                flex-flow: row wrap;
-                align-content: center;
-                box-sizing: border-box;
-                line-height: initial;
+            .events .row .card img {
+                height: 8.90625rem;
+                object-fit: cover;
             }
 
-                .events.row.card.card-body p.notify span.post-date-day {
-                    display: block;
-                    width: 100%;
-                    font-size: 24px;
-                    line-height: 1.5;
+            .events .row .card .card-body {
+                padding: 15px;
+            }
+
+                .events .row .card .card-body p.notify {
+                    color: #f1f1f1;
+                    background-color: #2f2424;
+                    height: 70px;
+                    width: 70px;
+                    text-align: center;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, .15), 0 3px 3px rgba(0, 0, 0, .15);
+                    margin-top: -60px;
+                    position: relative;
+                    margin-left: 25px;
+                    font-weight: bold;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-content: center;
+                    box-sizing: border-box;
+                    line-height: initial;
                 }
 
-            .events .row .card .card-body p.title {
-                font-size: 18px;
-                font-weight: 700;
-                height: 48px;
-                overflow: hidden;
+                    .events.row.card.card-body p.notify span.post-date-day {
+                        display: block;
+                        width: 100%;
+                        font-size: 24px;
+                        line-height: 1.5;
+                    }
+
+                .events .row .card .card-body p.title {
+                    font-size: 18px;
+                    font-weight: 700;
+                    height: 48px;
+                    overflow: hidden;
+                }
+
+                .events .row .card .card-body p.card-text {
+                    font-size: 12px;
+                    height: 4.125rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+
+.colab {
+    font-family: "Roboto", sans-serif;
+}
+
+    .colab .bg-loader {
+        background-image: url("../Images/bachkhoabg.jpg");
+    }
+
+        .colab .bg-loader .overlay {
+            background-color: rgba(0, 0, 0, 0.58);
+        }
+
+    .colab .row {
+        text-align: center;
+        max-width: 1260px;
+        margin: auto;
+        width: 100%;
+    }
+
+        .colab .row h2.title {
+            color: #f1f1f1;
+            font-size: 1.6em;
+            width: 100%;
+            margin-top: 2rem;
+            margin-bottom: .5rem;
+            letter-spacing: .05em;
+        }
+
+        .colab .row p.text {
+            color: #f1f1f1;
+            font-size: 14px;
+        }
+
+        .colab .row .colab-body {
+            display: flex;
+            margin: 2rem;
+        }
+
+            .colab .row .colab-body .row2 {
+                max-width: 1230px;
+                display: flex;
+                flex-flow: row wrap;
             }
 
-            .events .row .card .card-body p.card-text {
-                font-size: 14px;
-                height: 4.125rem;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                .colab .row .colab-body .row2 .card {
+                    display: flex;
+                    flex-flow: row wrap;
+                }
+
+                    .colab .row .colab-body .row2 .card .card-body {
+                        text-align: left;
+                        max-height: 100%;
+                        overflow: hidden;
+                    }
+
+            .colab .row .colab-body .card img {
+                right: 0;
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                left: 0;
+                top: 0;
+                position: absolute;
+                object-position: 50% 50%;
+                object-fit: cover;
             }
+
+            .colab .row .colab-body .row2 .card .card-body h5 {
+                width: 100%;
+                margin-top: 0;
+                margin-bottom: .5em;
+                color: #0a0909;
+            }
+
+            .colab .row .colab-body .row2 .card .card-body p {
+                font-size: 14px;
+            }
+
+            .colab .row .colab-body .card img {
+                height: 100%;
+                max-width: 18.75rem;
+            }
+
+.video {
+    font-family: "Roboto", sans-serif;
+}
+    .video h2 {
+        font-size: 1.6em;
+        margin-bottom: 2rem;
+        letter-spacing: .05em;
+    }
+    .video .row {
+        max-width: 1260px;
+        margin: auto;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
