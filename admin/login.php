@@ -46,16 +46,24 @@
             </div>
           </form>
           <?php
-                require_once('controllers/userController.php');
                 if(isset($_POST['submitLogin'])){
                     $username = $_POST['txtUsername'];
                     $pass  = $_POST['txtPass'];
-                    $usercontroller = new userController();
-                    $count = $usercontroller->getUser($username,$pass);
-                    if($count==1) {
-                      header('location:index.php');}
-                    else {
-                      header('location:login.php');}
+            
+                    //CSDL của chúng ta đã lưu Mật khẩu ở dạng THÔ
+                    //Bước 02: Thực hiện truy vấn
+                    $sql = "SELECT * FROM user WHERE username='$username' AND pass='$pass'";
+                    $result = mysqli_query($conn,$sql);
+                    
+                    $count=mysqli_num_rows($result);
+                    
+                    if($count == 1){
+                        $_SESSION['login'] = $email; //Tạo SESSION
+                        header('location:'.SITEURL.'/admin/index.php');
+                    }else{
+                        $_SESSION['message'] = 'abcxuz';
+                        header('location:'.SITEURL.'/admin/login.php');
+                    }
                 }
 
             ?>
