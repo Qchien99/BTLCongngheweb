@@ -29,10 +29,6 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.paddingcard {
-    padding-bottom: 30px;
-}
-
 .fill {
     top: 0;
     left: 0;
@@ -44,13 +40,12 @@ body {
 }
 
 .carousel {
-    background: none;
+    width: 100%;
 }
 
 .carousel-cell {
     width: 28%;
     height: 200px;
-    margin-right: 10px;
     background: #8C8;
     border-radius: 5px;
     counter-increment: carousel-cell;
@@ -84,7 +79,13 @@ span.post-date-month {
     font-size: 14px;
 }
 
-
+.col {
+    padding: 0 15px 30px;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
 /* End-Chiến */
 
 /* Đạt style */

@@ -113,8 +113,9 @@
 }
 
     .news .row {
-        width: 96%;
-        margin: 0 auto;
+        max-width: 1260px;
+        margin: auto;
+        width: 100%;
     }
 
         .news .row h2 {
@@ -190,38 +191,64 @@
             display: none;
         }
 
-.training .training-head {
-    text-align: center;
-    width: 80%;
-    margin: 2rem auto;
+.trainning {
+    font-family: "Roboto", sans-serif;
 }
 
-    .training .training-head p.title {
-        text-transform: uppercase;
-        font-family: "Roboto", sans-serif;
-        font-size: 1.6rem;
+.training .row {
+    text-align: center;
+    max-width: 1260px;
+    margin: auto;
+    width: 100%;
+}
+
+    .training .row h2.title {
+        color: #0a0909;
+        font-size: 1.6em;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
-.training .training-body {
+.training .row .training-body {
     display: flex;
-    width: 96%;
-    margin: 0 auto;
 }
+    .training .row .training-body .row2 {
+        max-width: 1230px;
+    }
 
-    .training .training-body .card {
+    .training .row .training-body .card {
         display: flex;
         flex-direction: row;
-        margin: 1rem;
-        height: 16.85rem;
     }
 
-        .training .training-body .card .card-body {
+        .training .row .training-body .card .card-body {
+            text-align: left;
             max-height: 100%;
             overflow: hidden;
-            text-overflow: ellipsis;
         }
-
-        .training .training-body .card img {
+        .training .row .training-body .card img {
+            right: 0;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            position: absolute;
+            object-position: 50% 50%;
+            object-fit: cover;
+        }
+            .training .row .training-body .card .card-body h5 {
+                width: 100%;
+                margin-top: 0;
+                margin-bottom: .5em;
+                color: #0a0909;
+            }
+            .training .row .training-body .card .card-body p {
+                font-size: 14px;
+            }
+       
+        .training .row .training-body .card img {
             height: 100%;
             max-width: 18.75rem;
         }
@@ -231,8 +258,9 @@
 }
 
     .alumni .row {
-        width: 96%;
-        margin: 0 auto;
+        max-width: 1260px;
+        margin: auto;
+        width: 100%;
     }
 
         .alumni .row h2 {
@@ -330,8 +358,9 @@ events {
 }
 
 .events .row {
-    width: 96%;
-    margin: 0 auto;
+    max-width: 1260px;
+    margin: auto;
+    width: 100%;
 }
 
     .events .row h2 {
@@ -348,7 +377,6 @@ events {
         .events .row .card img {
             height: 8.90625rem;
             object-fit: cover;
-           
         }
 
         .events .row .card .card-body {
@@ -373,12 +401,12 @@ events {
                 line-height: initial;
             }
 
-            .events.row.card.card-body p.notify span.post-date-day {
-                display: block;
-                width: 100%;
-                font-size: 24px;
-                line-height: 1.5;
-            }
+                .events.row.card.card-body p.notify span.post-date-day {
+                    display: block;
+                    width: 100%;
+                    font-size: 24px;
+                    line-height: 1.5;
+                }
 
             .events .row .card .card-body p.title {
                 font-size: 18px;
