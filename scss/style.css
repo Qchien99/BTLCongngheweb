@@ -526,14 +526,66 @@
 .video {
     font-family: "Roboto", sans-serif;
 }
+
     .video h2 {
         font-size: 1.6em;
         margin-bottom: 2rem;
         letter-spacing: .05em;
     }
+
     .video .row {
         max-width: 1260px;
         margin: auto;
         width: 100%;
         padding-bottom: 2rem;
     }
+
+
+
+.testimonial {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(54, 54, 54);
+}
+
+    .testimonial .row {
+        max-width: 1260px;
+        margin: auto;
+        width: 100%;
+        padding-bottom: 2rem;
+      
+    }
+
+        .testimonial .row h2 {
+            color: #f1f1f1;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .testimonial .row .boxholder {
+            width: 100%; /* full width */
+            height: 160px; /* height of carousel */
+            margin-right: 10px;
+            border: 2px solid #ccc;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 16px;
+            margin: 16px 0
+        }
+
+            .testimonial .row .boxholder::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .testimonial .row .boxholder .img {
+                float: left;
+                margin-right: 20px;
+                border-radius: 50%;
+            }
+
+            .testimonial .row .boxholder .span {
+                font-size: 20px;
+                margin-right: 15px;
+            }
