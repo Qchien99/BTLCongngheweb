@@ -1,6 +1,5 @@
 <?php
-    session_start();
-    include("template/header.php");
+    include_once("template/header.php");
     // 1. Xác định Controller và Action
     $controller = isset($_GET['controller']) ? $_GET['controller'] : 'user';
     $action = isset($_GET['action']) ? $_GET['action'] : 'index';

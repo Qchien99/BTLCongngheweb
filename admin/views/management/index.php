@@ -11,6 +11,8 @@
             <th>Về bản thân</th>
             <th>Email</th>
             <th>ID Cơ quan</th>
+            <th>Sửa</th>
+            <th>Xoá</th>
         </tr>
     </thead>
     <tbody>
@@ -23,7 +25,9 @@
                 <td><?php echo $management[2]; ?></td>
                 <td><?php echo $management[3]; ?></td>
                 <td><?php echo $management[4]; ?></td>
-                <td><?php echo $usmanagementer[6]; ?></td>
+                <td><?php echo $management[6]; ?></td>
+                <td><a href="index.php?controller=management&action=edit&id=<?php echo $management[0]; ?>"><i class="bi bi-pencil-square"></i></a></td>
+                <td><a href="index.php?controller=management&action=delete&id=<?php echo $management[0]; ?>"><i class="bi bi-archive-fill"></i></a></td>
             </tr>
         <?php
             }

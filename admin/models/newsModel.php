@@ -6,9 +6,16 @@
         {
             $conn = $this->openConnection();
             $sql = "select * from news_events";
-            $result = mysqli_query($this->openConnection(), $sql);
+            $result = mysqli_query($conn, $sql);
             $newsPN = mysqli_fetch_all($result);
             return $newsPN;
+        }
+        public function insertIntoNews($data)
+        {
+            $conn = $this->openConnection();
+            $sql = "insert into news_events(id,title,sub_title,content,type) 
+            values('".$data['id']."','".$data['title']."','".$data['sub_title']."','".$data['content']."','".$data['type']."')";
+            return $result = mysqli_query($conn, $sql);
         }
     }
 

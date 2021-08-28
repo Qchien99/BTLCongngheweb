@@ -1,14 +1,15 @@
+<?php ob_start(); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <title> Quản lý </title>
-    <link rel="stylesheet" href="style.css">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -37,7 +38,7 @@
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="index.php?controller=user&action=index">User</a></li>
+                    <li><a class="link_name" href="index.php?controller=user&action=index">Người dùng</a></li>
                     <li><a href="#">HTML & CSS</a></li>
                     <li><a href="#">JavaScript</a></li>
                     <li><a href="#">PHP & MySQL</a></li>
@@ -47,28 +48,42 @@
                 <div class="iocn-link">
                     <a href="#">
                     <i class='bx bx-news' style='color:#fffcfc' ></i>
-                        <span class="link_name">News</span>
+                        <span class="link_name">Tin tức</span>
                     </a>
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="#">News</a></li>
+                    <li><a class="link_name" href="#">Tin tức</a></li>
                     <li><a href="index.php?controller=news&action=index">Quản lý</a></li>
-                    <li><a href="index.php?controller=news&action=add">Thêm mới</a></li>
+                    <li><a href="index.php?controller=news&action=viewAdd">Thêm mới</a></li>
                 </ul>
             </li>
             <li>
                 <div class="iocn-link">
                     <a href="#">
                         <i class='bx bxs-face'></i>
-                        <span class="link_name">Management</span>
+                        <span class="link_name">Cán bộ</span>
                     </a>
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Management</a></li>
+                    <li><a class="link_name" href="#">Cán bộ</a></li>
                     <li><a href="index.php?controller=management&action=index">Quản lý</a></li>
-                    <li><a href="index.php?controller=management&action=add">Thêm mới</a></li>
+                    <li><a href="index.php?controller=management&action=viewAdd">Thêm mới</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                    <i class='bx bxs-institution' style='color:#ffffff'  ></i>
+                        <span class="link_name">Bộ môn-Trung tâm</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Bộ môn-Trung tâm</a></li>
+                    <li><a href="index.php?controller=subjectBuilding&action=index">Quản lý</a></li>
+                    <li><a href="index.php?controller=subjectBuilding&action=viewAdd">Thêm mới</a></li>
                 </ul>
             </li>
             <li>
