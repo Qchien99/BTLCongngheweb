@@ -17,14 +17,5 @@
 
             include("views/user/index.php");
         }
-        public function delete($id_user){
-            $userModel = new userModel();
-            $users = $userModel->deteleFromUsers($id_user);
-            include("views/user/detele.php");
-        }
-
-        public function edit(){
-
-        }
     }
 ?>
