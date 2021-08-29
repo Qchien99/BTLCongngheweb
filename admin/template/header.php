@@ -42,7 +42,7 @@
             </li>
             <li>
                 <div class="iocn-link">
-                    <a href="#">
+                    <a href="index.php?controller=post&action=index">
                     <i class='bx bx-news' style='color:#fffcfc' ></i>
                         <span class="link_name">Tin tức</span>
                     </a>
@@ -50,13 +50,13 @@
                 </div>
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">Tin tức</a></li>
-                    <li><a href="index.php?controller=news&action=index">Quản lý</a></li>
-                    <li><a href="index.php?controller=news&action=viewAdd">Thêm mới</a></li>
+                    <li><a href="index.php?controller=post&action=index">Quản lý</a></li>
+                    <li><a href="index.php?controller=post&action=viewAdd">Thêm mới</a></li>
                 </ul>
             </li>
             <li>
                 <div class="iocn-link">
-                    <a href="#">
+                    <a href="index.php?controller=employee&action=index"">
                         <i class='bx bxs-face'></i>
                         <span class="link_name">Cán bộ</span>
                     </a>
@@ -64,13 +64,13 @@
                 </div>
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">Cán bộ</a></li>
-                    <li><a href="index.php?controller=management&action=index">Quản lý</a></li>
-                    <li><a href="index.php?controller=management&action=viewAdd">Thêm mới</a></li>
+                    <li><a href="index.php?controller=employee&action=index">Quản lý</a></li>
+                    <li><a href="index.php?controller=employee&action=viewAdd">Thêm mới</a></li>
                 </ul>
             </li>
             <li>
                 <div class="iocn-link">
-                    <a href="#">
+                    <a href="index.php?controller=subject&action=index">
                     <i class='bx bxs-institution' style='color:#ffffff'  ></i>
                         <span class="link_name">Bộ môn-Trung tâm</span>
                     </a>
@@ -78,8 +78,8 @@
                 </div>
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">Bộ môn-Trung tâm</a></li>
-                    <li><a href="index.php?controller=subjectBuilding&action=index">Quản lý</a></li>
-                    <li><a href="index.php?controller=subjectBuilding&action=viewAdd">Thêm mới</a></li>
+                    <li><a href="index.php?controller=subject&action=index">Quản lý</a></li>
+                    <li><a href="index.php?controller=subject&action=viewAdd">Thêm mới</a></li>
                 </ul>
             </li>
             <li>

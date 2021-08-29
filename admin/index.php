@@ -1,7 +1,7 @@
 <?php
     include_once("template/header.php");
     // 1. Xác định Controller và Action
-    $controller = isset($_GET['controller']) ? $_GET['controller'] : 'user';
+    $controller = isset($_GET['controller']) ? $_GET['controller'] : 'system';
     $action = isset($_GET['action']) ? $_GET['action'] : 'index';
     
     // 2. Xác định Tệp tin ứng với Controller. user => User
@@ -19,5 +19,5 @@
     $object = new $controller;
     $object->$action();
 
-    include("template/footer.php")
+    include("template/footer.php");
 ?>

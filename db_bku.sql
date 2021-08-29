@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `management_dpm`
+-- Cấu trúc bảng cho bảng `tblEmployees`
 --
 
-CREATE TABLE `management_dpm` (
+CREATE TABLE `tblEmployees` (
   `id` int(11) NOT NULL,
   `name` varchar(50) DEFAULT NULL,
   `position` varchar(50) DEFAULT NULL,
@@ -38,19 +38,19 @@ CREATE TABLE `management_dpm` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `management_dpm`
+-- Đang đổ dữ liệu cho bảng `tblEmployees`
 --
 
-INSERT INTO `management_dpm` (`id`, `name`, `position`, `about`, `email`, `img`, `sb_id`) VALUES
+INSERT INTO `tblEmployees` (`id`, `name`, `position`, `about`, `email`, `img`, `sb_id`) VALUES
 (1, 'Nguyễn Bình Minh', 'Trưởng Bộ môn', 'Tiến sỹ (Tin học Ứng dụng, Trường Đại học Kĩ thuật Slovak, Slovakia , 2013)\r\nKỹ sư (Máy tính hỗ trợ thiết kế, Trường Đại học Tổng hợp kĩ thuật Tambov,\r\nLiên Bang Nga, 2008)', 'minhnb@soict.hust.edu.vn', 'https://soict.hust.edu.vn/content/uploads/2019/06/DHP_5224.jpg', 2);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `news_events`
+-- Cấu trúc bảng cho bảng `tblPosts`
 --
 
-CREATE TABLE `news_events` (
+CREATE TABLE `tblPosts` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `sub-title` varchar(255) NOT NULL,
@@ -60,10 +60,10 @@ CREATE TABLE `news_events` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `news_events`
+-- Đang đổ dữ liệu cho bảng `tblPosts`
 --
 
-INSERT INTO `news_events` (`id`, `title`, `sub-title`, `create-date`, `content`, `type`) VALUES
+INSERT INTO `tblPosts` (`id`, `title`, `sub-title`, `create-date`, `content`, `type`) VALUES
 (1, 'Title-News', 'Subtitle-News', '2021-08-27', 'Content is here', 'news'),
 (2, 'Title-event', 'Subtitle-event', '2021-08-27', 'Content is here', 'event'),
 (3, 'Title-ExStudent', 'Subtitle-ExStudent', '2021-08-27', 'Content is here', 'exstudent');
@@ -71,10 +71,10 @@ INSERT INTO `news_events` (`id`, `title`, `sub-title`, `create-date`, `content`,
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `subject_building`
+-- Cấu trúc bảng cho bảng `tblSubjects`
 --
 
-CREATE TABLE `subject_building` (
+CREATE TABLE `tblSubjects` (
   `id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
   `e-name` varchar(100) NOT NULL,
@@ -85,10 +85,10 @@ CREATE TABLE `subject_building` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `subject_building`
+-- Đang đổ dữ liệu cho bảng `tblSubjects`
 --
 
-INSERT INTO `subject_building` (`id`, `name`, `e-name`, `address`, `tel`, `email`, `type`) VALUES
+INSERT INTO `tblSubjects` (`id`, `name`, `e-name`, `address`, `tel`, `email`, `type`) VALUES
 (1, 'Công nghệ phần mềm', 'Software Engineering Department', 'Phòng 601, nhà B1, trường Đại học Bách khoa Hà Nội', '024 38 68 25 95', 'se@soict.hust.edu.vn', 'subject'),
 (2, 'Hệ thống thông tin', 'Information Systems', 'Phòng 603, nhà B1, trường Đại học Bách khoa Hà Nội', '+84 24 3869 612', 'is@soict.hust.edu.vn', 'subject'),
 (3, 'Khoa học máy tính', 'Computer Science', 'Phòng 602, nhà B1, trường Đại học Bách khoa Hà Nội', '+84 (0)24 38696', 'cs@soict.hust.edu.vn', 'subject'),
@@ -128,22 +128,22 @@ INSERT INTO `user` (`id_user`, `hoten`, `ngaysinh`, `email`, `username`, `pass`,
 --
 
 --
--- Chỉ mục cho bảng `management_dpm`
+-- Chỉ mục cho bảng `tblEmployees`
 --
-ALTER TABLE `management_dpm`
+ALTER TABLE `tblEmployees`
   ADD PRIMARY KEY (`id`),
   ADD KEY `sb_id` (`sb_id`);
 
 --
--- Chỉ mục cho bảng `news_events`
+-- Chỉ mục cho bảng `tblPosts`
 --
-ALTER TABLE `news_events`
+ALTER TABLE `tblPosts`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `subject_building`
+-- Chỉ mục cho bảng `tblSubjects`
 --
-ALTER TABLE `subject_building`
+ALTER TABLE `tblSubjects`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -157,21 +157,21 @@ ALTER TABLE `user`
 --
 
 --
--- AUTO_INCREMENT cho bảng `management_dpm`
+-- AUTO_INCREMENT cho bảng `tblEmployees`
 --
-ALTER TABLE `management_dpm`
+ALTER TABLE `tblEmployees`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT cho bảng `news_events`
+-- AUTO_INCREMENT cho bảng `tblPosts`
 --
-ALTER TABLE `news_events`
+ALTER TABLE `tblPosts`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT cho bảng `subject_building`
+-- AUTO_INCREMENT cho bảng `tblSubjects`
 --
-ALTER TABLE `subject_building`
+ALTER TABLE `tblSubjects`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
@@ -185,10 +185,10 @@ ALTER TABLE `user`
 --
 
 --
--- Các ràng buộc cho bảng `management_dpm`
+-- Các ràng buộc cho bảng `tblEmployees`
 --
-ALTER TABLE `management_dpm`
-  ADD CONSTRAINT `management_dpm_ibfk_1` FOREIGN KEY (`sb_id`) REFERENCES `subject_building` (`id`);
+ALTER TABLE `tblEmployees`
+  ADD CONSTRAINT `tblEmployees_ibfk_1` FOREIGN KEY (`sb_id`) REFERENCES `tblSubjects` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -51,6 +51,7 @@
         border-top: .4375rem solid #BE0F0F ;
         .dropdown {
             .dropbtn{
+                display: flex;
                 background-color: #363636;
                 color: white;
                 padding: .7rem;
