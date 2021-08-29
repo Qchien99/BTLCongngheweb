@@ -25,7 +25,7 @@
   </div>
   <div class="mb-3" style="min-width:100%;">
     <label class="form-label">Email</label>
-    <input type="text" class="form-control" name="txtMail">
+    <input type="email" class="form-control" name="txtMail">
   </div>
   <div class="mb-3" style="min-width:100%;">
     <label class="form-label">Type</label>

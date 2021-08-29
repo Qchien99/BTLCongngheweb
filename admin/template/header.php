@@ -26,22 +26,18 @@
                     <span class="link_name">Dashboard</span>
                 </a>
                 <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Category</a></li>
+                    <li><a class="link_name" href="index.php?controller=system&action=index">Category</a></li>
                 </ul>
             </li>
             <li>
                 <div class="iocn-link">
-                    <a href="#">
+                    <a href="index.php?controller=user&action=index">
                     <i class='bx bx-user' style='color:#fffcfc' ></i>
-                        <span class="link_name">User</span>
+                        <span class="link_name">Quản trị viên</span>
                     </a>
-                    <i class='bx bxs-chevron-down arrow'></i>
                 </div>
-                <ul class="sub-menu">
-                    <li><a class="link_name" href="index.php?controller=user&action=index">Người dùng</a></li>
-                    <li><a href="#">HTML & CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">PHP & MySQL</a></li>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="index.php?controller=user&action=index">Quản trị viên</a></li>
                 </ul>
             </li>
             <li>

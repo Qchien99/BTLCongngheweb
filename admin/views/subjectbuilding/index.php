@@ -26,8 +26,8 @@
                 <td><?php echo $sb[3]; ?></td>
                 <td><?php echo $sb[4]; ?></td>
                 <td><?php echo $sb[5]; ?></td>
-                <td><a href="index.php?controller=news&action=edit&id=<?php echo $sb[0]; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                <td><a href="index.php?controller=news&action=delete&id=<?php echo $sb[0]; ?>"><i class="bi bi-archive-fill"></i></a></td>
+                <td><a href="index.php?controller=subjectBuilding&action=viewEdit&id=<?php echo $sb[0]; ?>"><i class="bi bi-pencil-square"></i></a></td>
+                <td><a href="index.php?controller=subjectBuilding&action=delete&id=<?php echo $sb[0]; ?>"><i class="bi bi-archive-fill"></i></a></td>
             </tr>
         <?php
             }
