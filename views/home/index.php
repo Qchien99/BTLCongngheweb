@@ -21,46 +21,22 @@
             <div class="col-sm-12">
                 <h2 style="text-align:center">TIN MỚI NHẤT</h2>
             </div>
+            <?php 
+            foreach($post1 as $post) {
+            ?>
             <div class="col-sm-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="Images/banner1.png" class="card-img-top" alt="...">
+                    <img src="<?php echo $post[6] ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="notify">THÔNG BÁO</p>
-                        <p class="title">Đăng kí tham gia Virtual courses do Trường OTH Regensburg (CHLB Đức) tổ chức</p>
-                        <p class="card-text">Trong bối cảnh dịch COVID-19 vẫn tiếp diễn, Trường OTH Regensburg (CHLB Đức) mở cơ hội học tập trực tuyến cho sinh...</p>
+                        <p class="notify"><?php echo $post[5] ?></p>
+                        <p class="title"><?php echo $post[1] ?></p>
+                        <p class="card-text"><?php echo $post[4] ?></p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="Images/banner2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="notify">THÔNG BÁO</p>
-                        <p class="title">Thông báo về lịch Sinh hoạt công dân giữa khóa của sinh viên Viện CNTT&TT học kì 2020</p>
-                        <p class="card-text">Viện CNTT&TT thông báo lịch học Sinh hoạt công dân giữa khóa dành cho sinh viên toàn Viện. Thời gian: 17-19h, thứ...					</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="Images/banner2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="notify">THÔNG BÁO</p>
-                        <p class="title">Chương trình thực tập tại Viện nghiên cứu Quốc gia Nhật Bản (NII) cho cao học, nghiên cứu sinh</p>
-                        <p class="card-text">Trong khuôn khổ hợp tác giữa Trường Đại học Bách khoa Hà Nội và Viện Tin học Quốc gia Nhật Bản (NII),...					</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="Images/banner3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="notify">THÔNG BÁO</p>
-                        <p class="title">Thông báo về đăng ký lớp học phần Thực tập Doanh nghiệp kỳ hè 2020.3</p>
-                        <p class="card-text">Trong kỳ hè 2020.3, do tình hình dịch diễn biến phức tạp, Nhà Trường chỉ mở đăng ký lớp học phần thực...					</p>
-                    </div>
-                </div>
-            </div>
+            <?php
+                }
+            ?>
         </div>
         <div class="foot-part">
             <a href="#">
@@ -80,71 +56,27 @@
                     </div>
 
                     <div class="carousel" data-flickity='{"pageDots": false, "groupCells": 4 , "wrapAround": true, "prevNextButtons": false}'>
-                        <div class="col">
-                            <div class="card" style="width: 18rem;">
-                                <img src="Images/banner3.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="notify">
-                                        <span class="post-date-day">30</span>
-                                        <span class="post-date-month">TH 10</span>
-                                    </p>
-                                    <p class="title">Thông báo về đăng ký lớp học phần Thực tập Doanh nghiệp kỳ hè 2020.3</p>
-                                    <p class="card-text">Trong kỳ hè 2020.3, do tình hình dịch diễn biến phức tạp, Nhà Trường chỉ mở đăng ký lớp học phần thực...					</p>
+                        <?php
+
+                            foreach($post2 as $post) {
+                                $date = date_create("$post[3]");
+                                $d = date_format($date,"d");
+                                $m = date_format($date,"m");
+                        ?>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="<?php echo $post[6] ?>" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="notify">
+                                            <span class="post-date-day"><?php echo $d ?></span>
+                                            <span class="post-date-month">TH <?php echo $m ?></span>
+                                        </p>
+                                        <p class="title"><?php echo $post[1] ?></p>
+                                        <p class="card-text"><?php echo $post[4] ?></p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 18rem;">
-                                <img src="Images/banner1.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="notify">
-                                        <span class="post-date-day">30</span>
-                                        <span class="post-date-month">TH 10</span>
-                                    </p>
-                                    <p class="title">Đăng kí tham gia Virtual courses do Trường OTH Regensburg (CHLB Đức) tổ chức</p>
-                                    <p class="card-text">Trong bối cảnh dịch COVID-19 vẫn tiếp diễn, Trường OTH Regensburg (CHLB Đức) mở cơ hội học tập trực tuyến cho sinh...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 18rem;">
-                                <img src="Images/banner2.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="notify">
-                                        <span class="post-date-day">30</span>
-                                        <span class="post-date-month">TH 10</span>
-                                    </p>
-                                    <p class="title">Thông báo về lịch Sinh hoạt công dân giữa khóa của sinh viên Viện CNTT&TT học kì 2020</p>
-                                    <p class="card-text">Viện CNTT&TT thông báo lịch học Sinh hoạt công dân giữa khóa dành cho sinh viên toàn Viện. Thời gian: 17-19h, thứ...					</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 18rem;">
-                                <img src="Images/banner2.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="notify">
-                                        <span class="post-date-day">30</span>
-                                        <span class="post-date-month">TH 10</span>
-                                    </p>
-                                    <p class="title">Chương trình thực tập tại Viện nghiên cứu Quốc gia Nhật Bản (NII) cho cao học, nghiên cứu sinh</p>
-                                    <p class="card-text">Trong khuôn khổ hợp tác giữa Trường Đại học Bách khoa Hà Nội và Viện Tin học Quốc gia Nhật Bản (NII),...					</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 18rem;">
-                                <img src="Images/banner3.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="notify">
-                                        <span class="post-date-day">30</span>
-                                        <span class="post-date-month">TH 10</span>
-                                    </p>
-                                    <p class="title">Thông báo về đăng ký lớp học phần Thực tập Doanh nghiệp kỳ hè 2020.3</p>
-                                    <p class="card-text">Trong kỳ hè 2020.3, do tình hình dịch diễn biến phức tạp, Nhà Trường chỉ mở đăng ký lớp học phần thực...					</p>
-                                </div>
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -171,37 +103,25 @@
 
 
             <div class="training-body">
+                <?php
+                    foreach($post3 as $post){
+                ?>
                 <div class="col-sm-6  col">
                     <div class="row2 boxshadow">
                         <div class="card fill">
                             <div class="col-6">
-                                <img src="images/152127_1-400x267.jpg" class="img-fluid rounded-start" alt="...">
+                                <img src="<?php echo $post[6] ?>" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-6">
                                 <div class="card-body">
-                                    <h5 class="card-title">Chương trình đạo tạo</h5>
-                                    <p class="card-text">Viện hiện đang cung cấp hơn 20 chương trình đào tạo chất lượng cao thuộc 3 hệ đại học, ThS và TS; trong đó, có chương trình được thị trường lao động quốc tế đón nhận với hơn 60% sinh viên tốt nghiệp làm việc ở nước ngoài. Các chương trình đào tạo thuộc vào 3 nhóm ngành chính: Khoa học Máy tính, Kỹ thuật Máy tính, và Khoa học Dữ liệu và Trí tuệ Nhân tạo…<a href="">(xem tiếp)</a></p>
+                                    <h5 class="card-title"><?php echo $post[1] ?></h5>
+                                    <p class="card-text"><?php echo $post[4] ?><a href="#">(xem tiếp)</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6   col ">
-                    <div class="row2 boxshadow">
-                        <div class="card ">
-                            <div class="col-6">
-                                <img src="Images/IMG_8268_2-001.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-6">
-                                <div class="card-body">
-                                    <h5 class="card-title">Kiến tạo tương lai với SoICT</h5>
-                                    <p class="card-text">Thương hiệu Kỹ sư CNTT Bách khoa đã vượt ra khỏi biên giới nước nhà, và ngày càng chứng minh được chất lượng trên trường Quốc tế. Trong làn sóng Chuyển đổi số, lựa chọn phát triển tương lai với SoICT sẽ đem lại cho các bạn cơ hội trở thành các chuyên gia công nghệ, có khả năng làm chủ và dẫn dắt sự phát triển KHCN nước nhà… <a href="#">(xem tiếp)</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -221,36 +141,25 @@
                     </div>
 
                     <div class="colab-body">
+                        <?php
+                            foreach($post3 as $post){
+                        ?>
                         <div class="col-sm-6 col">
                             <div class="row2 boxshadow">
                                 <div class="card">
                                     <div class="col-6">
-                                        <img src="images/Screen-Shot-2019-05-02-at-1.png" class="img-fluid rounded-start" alt="...">
+                                        <img src="<?php echo $post[6] ?>" class="img-fluid rounded-start" alt="...">
                                     </div>
                                     <div class="col-6">
                                         <div class="card-body">
-                                            <h5 class="card-title">CÁC TRƯỜNG ĐỐI TÁC</h5>
-                                            <p class="card-text">Viện CNTT&TT có quan hệ hợp tác với nhiều trường đại học và viện nghiên cứu uy tín trên Thế giới. Thông qua hợp tác, sinh viên của Viện có cơ hội học tập, nghiên cứu tại các trường đối tác thông qua các học bổng trao đổi sinh viên, cũng như các dự án hợp tác nghiên cứu. Viện hợp tác với các đại học lớn ở Châu Âu, Nhật Bản… để cung cấp cho sinh viên các chương trình đào tạo song bằng (double degree), một hình thức “du học” kinh tế và hiệu quả…<a href="">(xem tiếp)</a></p>
+                                            <h5 class="card-title"><?php echo $post[1] ?></h5>
+                                            <p class="card-text"><?php echo $post[4] ?><a href="">(xem tiếp)</a></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col">
-                            <div class="row2 boxshadow">
-                                <div class="card">
-                                    <div class="col-6">
-                                        <img src="Images/DJI_0030-fixed2-mini-20190727T100030844048.jpg" class="img-fluid rounded-start" alt="...">
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="card-body">
-                                            <h5 class="card-title">DOANH NGHIỆP ĐỐI TÁC</h5>
-                                            <p class="card-text">Đào tạo và nghiên cứu rất cần sự hợp tác thực chất với cộng đồng doanh nghiệp. Viện hiện đang duy trì hợp tác với mạng lưới gồm hơn 130 doanh nghiệp CNTT trong và ngoài nước, trong đó có thể kể tới HEDSPI Supporting Partner Network (HEDSPI-SPN), mạng lưới hỗ trợ sinh viên tăng cường ngoại ngữ, phát triển kỹ năng mềm, cũng như làm quen với văn hóa DN để gia tăng sức cạnh tranh trong thị trường lao động quốc tế…<a href="#">(xem tiếp)</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -265,16 +174,20 @@
             </div>
 
             <div class="carousel" data-flickity='{"pageDots": false, "groupCells": 4 , "wrapAround": true, "prevNextButtons": false}'>
+                <?php
+                    foreach($post5 as $post){
+                ?>
                 <div class="col">
                     <div class="card" style="width: 18rem;">
-                        <img src="Images/banner3.jpg" class="card-img-top" alt="...">
+                        <img src="<?php echo $post[6] ?>" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="title">Thông báo về đăng ký lớp học phần Thực tập Doanh nghiệp kỳ hè 2020.3</p>
-                            <p class="card-text">Trong kỳ hè 2020.3, do tình hình dịch diễn biến phức tạp, Nhà Trường chỉ mở đăng ký lớp học phần thực...					</p>
+                            <p class="title"><?php echo $post[1] ?></p>
+                            <p class="card-text"><?php echo $post[4] ?></p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <?php } ?>
+                <!-- <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="Images/banner1.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -309,7 +222,7 @@
                             <p class="card-text">Trong kỳ hè 2020.3, do tình hình dịch diễn biến phức tạp, Nhà Trường chỉ mở đăng ký lớp học phần thực...					</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

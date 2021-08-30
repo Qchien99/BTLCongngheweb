@@ -26,7 +26,7 @@
                     <span class="link_name">Hệ thống</span>
                 </a>
                 <ul class="sub-menu blank">
-                    <li><a class="link_name" href="index.php?controller=system&action=index">Category</a></li>
+                    <li><a class="link_name" href="index.php?controller=system&action=index">Hệ thống</a></li>
                 </ul>
             </li>
             <li>
