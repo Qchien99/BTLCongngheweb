@@ -21,9 +21,9 @@
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#">
+                <a href="index.php?controller=system&action=index">
                     <i class='bx bx-grid-alt'></i>
-                    <span class="link_name">Dashboard</span>
+                    <span class="link_name">Hệ thống</span>
                 </a>
                 <ul class="sub-menu blank">
                     <li><a class="link_name" href="index.php?controller=system&action=index">Category</a></li>
@@ -49,7 +49,7 @@
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Tin tức</a></li>
+                    <li><a class="link_name" href="index.php?controller=post&action=index">Tin tức</a></li>
                     <li><a href="index.php?controller=post&action=index">Quản lý</a></li>
                     <li><a href="index.php?controller=post&action=viewAdd">Thêm mới</a></li>
                 </ul>
@@ -63,7 +63,7 @@
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Cán bộ</a></li>
+                    <li><a class="link_name" href="index.php?controller=employee&action=index">Cán bộ</a></li>
                     <li><a href="index.php?controller=employee&action=index">Quản lý</a></li>
                     <li><a href="index.php?controller=employee&action=viewAdd">Thêm mới</a></li>
                 </ul>
@@ -77,7 +77,7 @@
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Bộ môn-Trung tâm</a></li>
+                    <li><a class="link_name" href="index.php?controller=subject&action=index">Bộ môn-Trung tâm</a></li>
                     <li><a href="index.php?controller=subject&action=index">Quản lý</a></li>
                     <li><a href="index.php?controller=subject&action=viewAdd">Thêm mới</a></li>
                 </ul>
