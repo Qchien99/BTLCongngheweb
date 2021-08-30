@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+
+.main {
+    background-color: #fff;
+    position: relative;
+    display: block;
+    font-family: "Roboto", sans-serif;
+}
+
+.page-wrapper {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.large-3 {
+    max-width: 25%;
+    flex-basis: 25%;
+}
+
+.large-9 {
+    max-width: 75%;
+    flex-basis: 75%;
+}
+
+.large-12 {
+    max-width: 100%;
+    flex-basis: 100%;
+}
+
+.col {
+    position: relative;
+    margin: 0;
+    padding: 0 15px 30px;
+    width: 100%;
+}
+
+.wigget {
+    margin-bottom: 1.5em;
+}
+
+    .wigget .title h2 {
+        font-size: 1.6em;
+        line-height: 1.3;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: .5em;
+    }
+
+.wigget ul {
+    margin: 0;
+}
+
+.wigget .menu ul {
+    list-style: none;
+    margin-bottom: .3em;
+    text-align: left;
+    margin: 0;
+}
+
+.wigget .menu li {
+    font-size: 14px;
+}
+
+.wigget .menu a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.wigget span {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.post {
+    margin: 0 0 30px;
+}
+
+.article {
+    display: block;
+}
+
+.entry-header {
+    padding: 0;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.entry-title h1 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.entry-content {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.text-right {
+    text-align: right;
+}
