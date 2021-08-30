@@ -13,8 +13,8 @@
         public function insert($data)
         {
             $conn = $this->openConnection();
-            $sql = "insert into tblposts(id,title,sub_title,content,type) 
-            values(".$data['id'].",'".$data['title']."','".$data['sub_title']."','".$data['content']."','".$data['type']."')";
+            $sql = "insert into tblposts(id,title,sub_title,content,type,img) 
+            values(".$data['id'].",'".$data['title']."','".$data['sub_title']."','".$data['content']."','".$data['type']."','".$data['img']."')";
             echo $sql;
             return $result = mysqli_query($conn, $sql);
         }
@@ -22,7 +22,7 @@
         {
             $conn = $this->openConnection();
             $sql = "update tblposts set
-            title='".$data['title']."',sub_title='".$data['sub_title']."',content='".$data['content']."',type='".$data['type']."',create_date=NOW()
+            title='".$data['title']."',sub_title='".$data['sub_title']."',content='".$data['content']."',type='".$data['type']."',img='".$data['img']."',create_date=NOW()
             where id=".$data['id'];
             echo $sql;
             return $result = mysqli_query($conn, $sql);

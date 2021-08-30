@@ -6,9 +6,9 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Title</th>
-            <th>Create date</th>
-            <th>Type</th>
+            <th>Tiêu đề</th>
+            <th>Ngày tạo</th>
+            <th>Thể loại</th>
             <th>Sửa</th>
             <th>Xoá</th>
         </tr>

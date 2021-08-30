@@ -32,6 +32,10 @@
     <label class="form-label">Thể loại</label>
     <input type="text" class="form-control" name="txtType">
   </div>
+  <div class="mb-3" style="min-width:100%;">
+    <label class="form-label">Hình ảnh</label>
+    <input type="text" class="form-control" name="txtImg">
+  </div>
   <input type="submit" name="btnAdd" value="Thêm mới" class="btn btn-success">
 </form>
 <?php
@@ -41,6 +45,7 @@
         $subTitle = $_POST['txtSubTitle'];
         $content = $_POST['txtContent'];
         $type = $_POST['txtType'];
+        $img = $_POST['txtImg'];
 
         $data = array(
             'id' => $id,
@@ -48,6 +53,7 @@
             'sub_title'=>$subTitle,
             'content'=>$content,
             'type'=>$type,
+            'img'=>$img,
         );
         $postController = new postController();
         $postController->insert($data);
